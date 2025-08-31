@@ -115,7 +115,7 @@ nav ul li a{
 
 #back-to-top{
     position: fixed;
-    bottom: 120px;
+    bottom: 80px;
     right: 20px;
     background-color: blue;
     color: white;
@@ -227,5 +227,6 @@ a{
     font-size: x-large;
 
 }
+
 
 
