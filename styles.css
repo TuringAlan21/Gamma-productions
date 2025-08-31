@@ -1,0 +1,228 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+nav{
+    margin-bottom: -34px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:rgb(16, 1, 84);
+    width: 100vw;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    
+}
+nav .logo ul{
+    list-style: none;
+    display: flex;
+    align-self: flex-start;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0;
+    margin-left: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.fa-bars{
+    color: white;
+    font-size: 25px;
+    margin: auto;
+    margin-right: 70px;
+    cursor: pointer;
+}
+
+.sub-container{
+    width: 100vw;
+}
+
+#sub-one{
+
+    background-image: url("https://images.unsplash.com/photo-1564069114553-7215e1ff1890?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    scroll-snap-align: start;
+    border-bottom: 20px solid black;
+}
+#sub-one h1{
+    color: white;
+    text-align: center;
+    padding-top: 20%;
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+#sub-two{
+    display: flex;
+    justify-content: space-around;
+    background-color: lightgreen;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1575886876783-ea3cbbc8204d?q=80&w=1134&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    scroll-snap-align: start;
+    border-bottom: 20px solid black;
+    flex-direction: row;
+}
+
+#sub-three{
+    display: flex;
+    justify-content: flex-start;
+    background-color: lightblue;
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1631195092568-a1030d926fd3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    scroll-snap-align: start;
+}
+.footer{
+    width: 100vw;
+    background-color: black;
+    color: grey;
+    text-align: center;
+    height: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links{
+    margin-left: 50px;
+}
+
+
+#back-to-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    color: blue;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 100%;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1000;
+    width: fit-content;
+    height: fit-content;
+    transition: right
+    ease-in-out 1.5s;
+}
+
+.side-bar{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    height: 100vh;
+    width: 250px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    justify-self: right;
+    transition: right ease-in-out 0.5s;
+    z-index: 10000000;
+    right: -250px;
+}
+
+.side-bar ul li{
+    list-style: none;
+    padding: 20px;
+    border-bottom: 1px solid grey;
+}
+
+
+a{
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+}
+#close{
+    width: 50%;
+    font-weight: bold;
+    color: grey;
+}
+#close-btn{
+    position: absolute;
+    align-self: flex-start;
+    font-size: larger;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 80%;
+    margin-top: 5px;
+    background-color: silver;
+    font-weight: bold;
+    color: white;
+    padding: 5px 10px;
+}
+
+#sub-one > h1{
+    color:white;
+    text-shadow: 2px 2px 10px black;
+}
+
+#headquarters, #mission-statement{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 20%;
+    height: fit-content;
+}
+#mission-statement{
+    justify-content: flex-start;
+}
+
+
+#headquarters h2, #mission-statement h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#headquarters p, h2, #mission-statement p, h2{
+    color: grey;
+}
+
+#hq-title{
+    color: white;
+    align-self: center;
+
+}
+
+#motto{
+    color: white;
+    justify-self: flex-end;
+    margin-left: 45%;
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    font-style: italic;
+    text-shadow: 2px 2px 10px black;
+    font-size: x-large;
+}
