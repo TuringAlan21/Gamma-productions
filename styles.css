@@ -115,7 +115,7 @@ nav ul li a{
 
 #back-to-top{
     position: fixed;
-    bottom: 80px;
+    bottom: 60px;
     right: 20px;
     background-color: blue;
     color: white;
@@ -130,6 +130,7 @@ nav ul li a{
     height: fit-content;
     transition: right
     ease-in-out 1.5s;
+    font-size:x-large;
 }
 
 .side-bar{
@@ -227,6 +228,7 @@ a{
     font-size: x-large;
 
 }
+
 
 
 
