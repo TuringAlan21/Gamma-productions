@@ -230,6 +230,13 @@ a{
 }
 
 @media (max-width: 1024px) {
+
+    nav{
+        height: 10vh;
+        padding: 10px 0;
+    }
+
+
     .nav-links {
         margin-left: 0;
     }
@@ -250,6 +257,11 @@ a{
 }
 
 @media (max-width: 600px) {
+    nav {
+        height: 10vh;
+        padding: 10px 0;
+    }
+
     nav .logo ul {
         gap: 10px;
         margin-left: 0;
@@ -272,6 +284,12 @@ a{
 
 
 @media (max-width: 600px) {
+    nav{
+        height: 10vh;
+        padding: 10px 0;
+    }
+
+
     nav .logo ul {
         gap: 10px;
         margin-left: 0;
