@@ -42,14 +42,11 @@ burgerMenu.addEventListener('click', function openSideBar() {
 });
 
 window.ondblclick = function closeSideBar() {
-    sideBar.style.right = '-250px'
+    sideBar.style.right = getSidebarHiddenRight();
 };
 
-closeButton.addEventListener('click', () => {
-        sideBar.style.right = '-250px';
-    });
 
-// Function to check if an element is in the viewport
+
 function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
@@ -60,7 +57,7 @@ function isElementInViewport(el) {
     );
 }
 
-// Function to handle the scroll event
+
 function handleScroll() {
     const elements = document.querySelectorAll('#headquarters, #mission-statement');
     elements.forEach(element => {
@@ -70,11 +67,39 @@ function handleScroll() {
     });
 }
 
-// Attach the scroll event listener
+
 window.addEventListener('scroll', handleScroll);
 
-// Run the function once on page load to check initial position
 handleScroll();
+
+
+
+function getSidebarHiddenRight() {
+    // Get computed width of sidebar (e.g., '250px' or '80vw')
+    const sidebarWidth = window.getComputedStyle(sideBar).width;
+    return `-${sidebarWidth}`;
+}
+
+function openSideBar() {
+    sideBar.style.right = "0";
+}
+
+function closeSideBar() {
+    sideBar.style.right = getSidebarHiddenRight();
+}
+
+burgerMenu.addEventListener('click', openSideBar);
+closeButton.addEventListener('click', closeSideBar);
+window.ondblclick = closeSideBar;
+
+
+window.addEventListener('resize', () => {
+    if (sideBar.style.right !== "0") {
+        closeSideBar();
+    }
+});
+
+
 
 
     
