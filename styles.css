@@ -255,7 +255,6 @@ a{
 
 @media (max-width: 600px) {
     nav {
-        flex-direction: column;
         height: auto;
         padding: 10px 0;
     }
@@ -331,6 +330,7 @@ a{
 }
 
 }
+
 
 
 
