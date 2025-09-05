@@ -230,9 +230,6 @@ a{
 }
 
 @media (max-width: 1024px) {
-    nav {
-        height: auto;
-    }
     .nav-links {
         margin-left: 0;
     }
