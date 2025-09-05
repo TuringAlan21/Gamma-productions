@@ -233,7 +233,6 @@ a{
 
     nav{
         height: 10vh;
-        padding: 10px 0;
     }
 
 
@@ -259,7 +258,6 @@ a{
 @media (max-width: 600px) {
     nav {
         height: 10vh;
-        padding: 10px 0;
     }
 
     nav .logo ul {
@@ -286,7 +284,6 @@ a{
 @media (max-width: 600px) {
     nav{
         height: 10vh;
-        padding: 10px 0;
     }
 
 
