@@ -272,6 +272,8 @@ a{
         padding-top: 40%;
     }
 
+} 
+
 
     @media (max-width: 600px) {
     nav {
@@ -322,8 +324,6 @@ a{
         padding: 8px 10px;
         font-size: large;
     }
-}
-
 }
 
 
