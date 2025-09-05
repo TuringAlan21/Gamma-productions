@@ -250,10 +250,6 @@ a{
 }
 
 @media (max-width: 600px) {
-    nav {
-        height: auto;
-        padding: 10px 0;
-    }
     nav .logo ul {
         gap: 10px;
         margin-left: 0;
@@ -275,11 +271,7 @@ a{
 } 
 
 
-    @media (max-width: 600px) {
-    nav {
-        height: auto;
-        padding: 10px 0;
-    }
+@media (max-width: 600px) {
     nav .logo ul {
         gap: 10px;
         margin-left: 0;
